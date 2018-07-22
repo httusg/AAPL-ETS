@@ -1,0 +1,1 @@
+{"AMN": {"Optimal": 20, "nonOptimal": 25}, "ANN": {"Optimal": 18, "nonOptimal": 20}, "AAN": {"Optimal": 18, "nonOptimal": 20}, "MMN": {"Optimal": 20, "nonOptimal": 25}, "MNN": {"Optimal": 18, "nonOptimal": 20}, "MAN": {"Optimal": 18, "nonOptimal": 20}}
