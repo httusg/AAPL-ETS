@@ -509,17 +509,17 @@ The plots of performance and experiment outputs could be found in the folder *ou
 
 | SESE Performance of AAN model with various window sizes           |
 |:-----------------------------------------------------------------:|
-|![](../output/ANN_AAN_AMN_MNN_MAN_MMN/train/train_performance_sese_etsAAN.png) |
+|![](./output/ANN_AAN_AMN_MNN_MAN_MMN/train/train_performance_sese_etsAAN.png) |
 
 However The experiments on the validation dataset shows the opposite result. The representative plots below show that the larger the window size, the SSE performance curves of the optimal ETS models tend to get closer (SESE much smaller) to those of the benchmark model. If the window extends so much to the past, the optimal ETS models would become the predictor on the global scale, and have the same behavior as the benchmark model. However this does not neccesary mean the capability of ETS models is less than the benchmark model because the performance also depends on the initial condition. The heuristics used in this project might be some how not suitable for the ETS models to forecast the AAPL time series.
 
 | SSE Performance of AAN model with window size of 18, SESE = 131                              |
 |:--------------------------------------------------------------------------------------------:|
-|![](../output/ANN_AAN_AMN_MNN_MAN_MMN/validate_optimal/validate_optimal_dataset504_segment18-191days_etsAAN_sse.png) |
+|![](./output/ANN_AAN_AMN_MNN_MAN_MMN/validate_optimal/validate_optimal_dataset504_segment18-191days_etsAAN_sse.png) |
 
 | SSE Performance of AAN model with window size of 20, SESE = 91                                     |
 |:--------------------------------------------------------------------------------------------------:|
-|![](../output/ANN_AAN_AMN_MNN_MAN_MMN/validate_nonoptimal/validate_nonoptimal_dataset504_segment20-191days_etsAAN_sse.png) |
+|![](./output/ANN_AAN_AMN_MNN_MAN_MMN/validate_nonoptimal/validate_nonoptimal_dataset504_segment20-191days_etsAAN_sse.png) |
 
 
 The following statistics table shows how much some models could take with a little bit larger window size on the validation dataset.
@@ -559,23 +559,23 @@ If $\alpha=1$, the ANN model becomes the benchmark model. The dynamics figure of
 
 | dynamics of $\alpha$ of AAN model with window size of 20                                            |
 |:---------------------------------------------------------------------------------------------------:|
-|![](../output/ANN_AAN_AMN_MNN_MAN_MMN/validate_nonoptimal/validate_nonoptimal_dataset504_segment20-191days_etsANN_para.png) |
+|![](./output/ANN_AAN_AMN_MNN_MAN_MMN/validate_nonoptimal/validate_nonoptimal_dataset504_segment20-191days_etsANN_para.png) |
 
 The SSE curve of ANN model is closest to the benchmark model. This means ANN model imitakes almost perfectly the prediction behavior of the benchmark model by its own way.
 
 | SSE curve of ANN model with window size of 20                                                       |
 |:---------------------------------------------------------------------------------------------------:|
-|![](../output/ANN_AAN_AMN_MNN_MAN_MMN/validate_nonoptimal/validate_nonoptimal_dataset504_segment20-191days_etsANN_sse.png)  |
+|![](./output/ANN_AAN_AMN_MNN_MAN_MMN/validate_nonoptimal/validate_nonoptimal_dataset504_segment20-191days_etsANN_sse.png)  |
 
 The forecasting curve of ANN model almost matches the benchmark.
 
 | Forecasting curve of ANN model with window size of 20                                                   |
 |:--------------------------------------------------------------------------------------------------------:|
-|![](../output/ANN_AAN_AMN_MNN_MAN_MMN/validate_nonoptimal/validate_nonoptimal_dataset504_segment20-191days_etsANN_forecast.png)  |
+|![](./output/ANN_AAN_AMN_MNN_MAN_MMN/validate_nonoptimal/validate_nonoptimal_dataset504_segment20-191days_etsANN_forecast.png)  |
 
 | 3-sigma Confidence Interval of ANN model with window size of 20                                          |
 |:--------------------------------------------------------------------------------------------------------:|
-|![](../output/ANN_AAN_AMN_MNN_MAN_MMN/validate_nonoptimal/validate_nonoptimal_dataset504_segment20-191days_etsANN_CI3sigma.png)  |
+|![](./output/ANN_AAN_AMN_MNN_MAN_MMN/validate_nonoptimal/validate_nonoptimal_dataset504_segment20-191days_etsANN_CI3sigma.png)  |
 
 The 3-sigman confidence interval covers almost all the dataset. Several exceptions occur at the high or deep cliffs. Two exceptions could be seen vividly is at the time slice 2017-08 and the deep cliff between 2017-06 and 2017-07. The AAPL price curve acrosses the confidence interval, and the SSE curve jumps up significantly. These two exceptional cases generate SESE pulses to lift up the SSE curve. The shape of SSE curve is same as that of the benchmark for the rest of the dataset. This implies that the ANN model is very robust as well. It can recover from high pitch disturbance.
 
