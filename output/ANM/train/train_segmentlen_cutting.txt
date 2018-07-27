@@ -1,0 +1,1 @@
+{"ANM": {"Optimal": 18, "nonOptimal": 20}}

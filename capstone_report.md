@@ -528,6 +528,8 @@ The following statistics table shows how much some models could take with a litt
 |:----------:|:----------:|:-------------------:|:----------:|:----------:|:----------------------:|
 | Validation | ANN        | 18                  | 68         |            |                        |
 |            |            | 20                  | 51         | -17        | 25%                    |
+| Validation | ANA        | 18                  | 71         |            |                        |
+|            |            | 20                  | 48         | -23        | 32%                    |
 | Validation | ANM        | 18                  | 71         |            |                        |
 |            |            | 20                  | 48         | -23        | 32%                    |
 | Validation | AAN        | 18                  | 131        |            |                        |
